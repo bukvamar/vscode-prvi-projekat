@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sala - Raspored sjedišta</title>
-  <link rel="stylesheet" href="filmovi.css">
   <link rel="stylesheet" href="sala.css">
 </head>
 <body>
@@ -17,54 +16,140 @@
   </nav>
 
   <main>
-    <div class="info-section">
+    <section class="info-section">
       <h1>Top Gun: Maverick</h1>
       <p><strong>Vrijeme projekcije:</strong> 20:00</p>
       <p><strong>Broj sale:</strong> Sala 3</p>
-    </div>
+    </section>
 
-    <div class="platno">
-      <h2>PLATNO</h2>
-    </div>
+    <div class="screen-label">PLATNO</div>
 
-    <div class="sala-wrapper">
+    <section class="sala-wrapper">
       <div class="sala-grid">
-        <div class="oznaka-reda">A</div>
-        <div class="sjediste slobodno"></div><div class="sjediste slobodno"></div>
-        <div class="sjediste zauzeto"></div><div class="sjediste zauzeto"></div>
-        <div class="sjediste slobodno"></div><div class="sjediste slobodno"></div>
-        <div class="sjediste rezervisano"></div><div class="sjediste rezervisano"></div>
-        <div class="sjediste slobodno"></div><div class="sjediste slobodno"></div>
+        <div class="grid-header"></div>
+        <div class="grid-header">1</div>
+        <div class="grid-header">2</div>
+        <div class="grid-header">3</div>
+        <div class="grid-header">4</div>
+        <div class="grid-header">5</div>
+        <div class="grid-header">6</div>
+        <div class="grid-header">7</div>
+        <div class="grid-header">8</div>
+        <div class="grid-header">9</div>
+        <div class="grid-header">10</div>
 
-        <div class="oznaka-reda">B</div>
-        <div class="sjediste zauzeto"></div><div class="sjediste zauzeto"></div>
-        <div class="sjediste slobodno"></div><div class="sjediste slobodno"></div>
-        <div class="sjediste slobodno"></div><div class="sjediste slobodno"></div>
-        <div class="sjediste slobodno"></div><div class="sjediste slobodno"></div>
-        <div class="sjediste zauzeto"></div><div class="sjediste zauzeto"></div>
+        <div class="row-label">A</div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-booked"></div>
+        <div class="seat seat-booked"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-reserved"></div>
+        <div class="seat seat-reserved"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
 
-        <div class="oznaka-reda">C</div>
-        <div class="sjediste rezervisano"></div><div class="sjediste rezervisano"></div>
-        <div class="sjediste slobodno"></div><div class="sjediste slobodno"></div>
-        <div class="sjediste zauzeto"></div><div class="sjediste zauzeto"></div>
-        <div class="sjediste zauzeto"></div><div class="sjediste zauzeto"></div>
-        <div class="sjediste slobodno"></div><div class="sjediste slobodno"></div>
+        <div class="row-label">B</div>
+        <div class="seat seat-booked"></div>
+        <div class="seat seat-booked"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-reserved"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
 
-        <div class="oznaka-reda">H</div>
-        <div class="sjediste slobodno"></div><div class="sjediste slobodno"></div>
-        <div class="sjediste slobodno"></div><div class="sjediste slobodno"></div>
-        <div class="sjediste slobodno"></div><div class="sjediste slobodno"></div>
-        <div class="sjediste slobodno"></div><div class="sjediste slobodno"></div>
-        <div class="sjediste slobodno"></div><div class="sjediste slobodno"></div>
+        <div class="row-label">C</div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-booked"></div>
+        <div class="seat seat-booked"></div>
+        <div class="seat seat-reserved"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+
+        <div class="row-label">D</div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-reserved"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-booked"></div>
+        <div class="seat seat-booked"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+
+        <div class="row-label">E</div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-reserved"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-booked"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+
+        <div class="row-label">F</div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-reserved"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-booked"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+
+        <div class="row-label">G</div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-booked"></div>
+        <div class="seat seat-booked"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+
+        <div class="row-label">H</div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-booked"></div>
+        <div class="seat seat-free"></div>
+        <div class="seat seat-free"></div>
       </div>
-    </div>
+    </section>
 
-    <div class="legenda">
-      <div class="legenda-item"><div class="sjediste slobodno"></div> Slobodno</div>
-      <div class="legenda-item"><div class="sjediste zauzeto"></div> Zauzeto</div>
-      <div class="legenda-item"><div class="sjediste rezervisano"></div> Rezervisano</div>
-    </div>
-
-    </main>
+    <section class="legend">
+      <div class="legend-item">
+        <span class="legend-square free"></span>
+        Slobodno
+      </div>
+      <div class="legend-item">
+        <span class="legend-square booked"></span>
+        Zauzeto
+      </div>
+      <div class="legend-item">
+        <span class="legend-square reserved"></span>
+        Rezervisano
+      </div>
+    </section>
+  </main>
 </body>
 </html>
