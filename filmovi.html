@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmovi</title>
+  <style>
+    :root {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      min-width: 300px;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #222;
+      color: white;
+      z-index: 1000;
+      padding: 10px 16px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    nav li {
+      margin: 0;
+    }
+
+    nav a {
+      display: inline-block;
+      padding: 10px 14px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: background 0.2s ease;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background: rgba(255,255,255,0.14);
+    }
+
+    main {
+      padding: 90px 20px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      margin: 0 0 18px;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 8px;
+    }
+
+    .genre-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      justify-items: center;
+    }
+
+    .film-card {
+      width: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .film-card img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    .film-card .details {
+      padding: 12px;
+    }
+
+    .film-card .title {
+      margin: 0 0 8px;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+
+    .film-card .duration {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .status-current {
+      background: white;
+    }
+
+    .status-soon {
+      background: powderblue;
+    }
+
+    .status-ended {
+      background: gray;
+      color: #111;
+    }
+
+    @media (max-width: 520px) {
+      nav ul {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      nav a {
+        width: 100%;
+        text-align: center;
+      }
+
+      main {
+        padding-top: 130px;
+      }
+
+      .genre-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#akcija">Filmovi</a></li>
+      <li><a href="#raspored">Raspored</a></li>
+      <li><a href="#sala">Sala</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Filmovi u kinima</h1>
+
+    <section id="akcija">
+      <h2>Akcija</h2>
+      <div class="genre-grid">
+        <div class="film-card status-current">
+          <img src="" alt="Poster filma">
+          <div class="details">
+            <p class="title">Brzi i žestoki 12</p>
+            <p class="duration">Trajanje: 136 min</p>
+          </div>
+        </div>
+        <div class="film-card status-soon">
+          <img src="" alt="Poster filma">
+          <div class="details">
+            <p class="title">Tajna misija</p>
+            <p class="duration">Trajanje: 121 min</p>
+          </div>
+        </div>
+        <div class="film-card status-ended">
+          <img src="" alt="Poster filma">
+          <div class="details">
+            <p class="title">Noćni lov</p>
+            <p class="duration">Trajanje: 109 min</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="drama">
+      <h2>Drama</h2>
+      <div class="genre-grid">
+        <div class="film-card status-current">
+          <img src="" alt="Poster filma">
+          <div class="details">
+            <p class="title">Posljednji poziv</p>
+            <p class="duration">Trajanje: 128 min</p>
+          </div>
+        </div>
+        <div class="film-card status-soon">
+          <img src="" alt="Poster filma">
+          <div class="details">
+            <p class="title">Put bez povratka</p>
+            <p class="duration">Trajanje: 143 min</p>
+          </div>
+        </div>
+        <div class="film-card status-ended">
+          <img src="" alt="Poster filma">
+          <div class="details">
+            <p class="title">Tragovi u snijegu</p>
+            <p class="duration">Trajanje: 117 min</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="komedija">
+      <h2>Komedija</h2>
+      <div class="genre-grid">
+        <div class="film-card status-current">
+          <img src="" alt="Poster filma">
+          <div class="details">
+            <p class="title">Upoznajte susjede</p>
+            <p class="duration">Trajanje: 98 min</p>
+          </div>
+        </div>
+        <div class="film-card status-soon">
+          <img src="" alt="Poster filma">
+          <div class="details">
+            <p class="title">Ljetni kaos</p>
+            <p class="duration">Trajanje: 105 min</p>
+          </div>
+        </div>
+        <div class="film-card status-ended">
+          <img src="" alt="Poster filma">
+          <div class="details">
+            <p class="title">Dio mog svijeta</p>
+            <p class="duration">Trajanje: 92 min</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="animirani">
+      <h2>Animirani</h2>
+      <div class="genre-grid">
+        <div class="film-card status-current">
+          <img src="" alt="Poster filma">
+          <div class="details">
+            <p class="title">Zadnji zmaj</p>
+            <p class="duration">Trajanje: 84 min</p>
+          </div>
+        </div>
+        <div class="film-card status-soon">
+          <img src="" alt="Poster filma">
+          <div class="details">
+            <p class="title">arobni grad</p>
+            <p class="duration">Trajanje: 77 min</p>
+          </div>
+        </div>
+        <div class="film-card status-ended">
+          <img src="" alt="Poster filma">
+          <div class="details">
+            <p class="title">Mala zvijezda</p>
+            <p class="duration">Trajanje: 88 min</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="raspored">
+      <h2>Raspored</h2>
+      <p>Raspored prikaza po projekcijama bit će objavljen u narednom pregledu.</p>
+    </section>
+
+    <section id="sala">
+      <h2>Sala</h2>
+      <p>Informacije o sali i sjedalima nalaze se ovdje.</p>
+    </section>
+  </main>
+</body>
+</html>
